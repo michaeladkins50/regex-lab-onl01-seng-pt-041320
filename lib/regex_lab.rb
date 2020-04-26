@@ -21,15 +21,5 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-  phone_valid_checker=0
-    while phone_valid_checker < phone.length
-    phone_number = phone.(/\d/)
-      puts phone_number
-      if
-      true
-    else
-      false
-    end
-    phone_valid_checker += 1
-  end
+  
 end
