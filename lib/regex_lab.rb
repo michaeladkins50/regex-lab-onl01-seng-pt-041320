@@ -23,7 +23,7 @@ end
 def valid_phone_number?(phone)
   phone_valid_checker=0
     while phone_valid_checker < phone.length
-    phone_number = phone.scan(/\d/)
+    phone_number = phone.(/\d/)
       puts phone_number
       if
       true
