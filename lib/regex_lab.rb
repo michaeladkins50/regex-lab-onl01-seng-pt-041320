@@ -14,26 +14,16 @@ def words_five_letters_long(text)
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
- if text.match(/^[A-Z]/) && text.match(/[\.]$/)
-   #text.match(/\A[A-Z]\w*\./)
-   true
- else false
- end
+  if text.match(/^[A-Z]/) && text.match(/[\.]$/)
+      true
+    else false
+    end
 end
 
 def valid_phone_number?(phone)
-#  phone_numbers = phone.split(", ")
-#  phone_checker = 0
-#  while phone_checker < phone_numbers.length
-#    phone_numbers.each do |number|
-#      puts number.scan(/\d........./)
-      if phone.match(/([0-9] ?){10}/) || phone.match(/(\([0-9]{3}\)([0-9]{3}-[0-9]{4})\b)/) || phone.match(/\b([0-9]{7})\b/)
-        #number.scan(/\d......../).length == 10
-        true
-      else
-        false
-      end
-#      phone_checker += 1
-#    end
-#  end
+  if phone.match(/([0-9] ?){10}/) || phone.match(/(\([0-9]{3}\)([0-9]{3}-[0-9]{4})\b)/) || phone.match(/\b([0-9]{7})\b/)
+    true
+  else
+      false
+  end
 end
