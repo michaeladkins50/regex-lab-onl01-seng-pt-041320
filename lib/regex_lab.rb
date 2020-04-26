@@ -30,6 +30,7 @@ def valid_phone_number?(phone)
       else
         false
       end
+      phone_checker += 1
     end
   end
 end
