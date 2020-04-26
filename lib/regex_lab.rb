@@ -34,4 +34,3 @@ def valid_phone_number?(phone)
     end
   end
 end
-    
