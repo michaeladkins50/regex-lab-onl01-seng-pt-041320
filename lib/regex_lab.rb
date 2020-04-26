@@ -24,6 +24,7 @@ def valid_phone_number?(phone)
   phone_number = nil
   phone.each do |number|
     phone_number = number.match(/\d/)
+    puts phone_number
     if phone_number.length == 10
       true
     end
