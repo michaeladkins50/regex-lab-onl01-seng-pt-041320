@@ -23,7 +23,8 @@ end
 def valid_phone_number?(phone)
   phone_valid_checker=0
     while phone_valid_checker < phone.length
-    if phone[phone_valid_checker].match(/\d/).length == 10
+    if phone_number = phone[phone_valid_checker].match(/\d/)
+      puts phone_number
       true
     else
       false
