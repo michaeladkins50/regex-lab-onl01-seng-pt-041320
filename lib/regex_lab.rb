@@ -25,7 +25,7 @@ def valid_phone_number?(phone)
     while phone_valid_checker < phone.length
     phone_number = phone.scan(/\d/)
       puts phone_number
-      if 
+      if
       true
     else
       false
