@@ -25,6 +25,7 @@ def valid_phone_number?(phone)
   phone_checker = 0
   while phone_checker < phone_numbers.length
     phone_numbers.each do |number|
+      puts number.scan(/\d........./)
       if number.scan(/\d......../).length == 10
         true
       else
